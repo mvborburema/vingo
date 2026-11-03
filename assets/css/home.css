@@ -1220,3 +1220,15 @@ html body section#services.services-v27 h3,html body section#portfolio.portfolio
 @media(max-width:1100px){.v31-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:700px){.v31-footer .footer-grid{grid-template-columns:1fr!important}.v31-whatsapp-float{right:16px!important;bottom:16px!important;width:56px!important;height:56px!important;min-width:56px!important;min-height:56px!important}}
 @media(prefers-reduced-motion:reduce){.v31-whatsapp-float{transition:none!important}}
+
+/* VINGO navigation: navy-blue palette — desktop and mobile */
+html body .nav-shell .floating-nav{
+  background:rgba(7,27,52,.96)!important;
+  border-color:rgba(116,166,221,.28)!important;
+  box-shadow:0 16px 40px rgba(2,12,31,.27)!important;
+}
+html body .nav-shell .floating-nav .nav a{color:#dbe7f6!important}
+html body .nav-shell .floating-nav .nav a:hover{color:#83bdff!important}
+html body .nav-shell .floating-nav .locale{border-color:rgba(130,179,235,.25)!important}
+html body .nav-shell .floating-nav .circle-arrow{background:#0a2b52!important;color:#88c0ff!important}
+@media(max-width:890px){html body .nav-shell .floating-nav .nav{background:#0a2342!important;border-color:#294f76!important}}
