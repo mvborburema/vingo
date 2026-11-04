@@ -66,3 +66,48 @@ a.innerHTML=isPt?brazil:usa;
   wrapper.appendChild(header);
   old.replaceWith(wrapper);
 })();
+
+
+/* VINGO Blog v39: functional client-side search, filters and article sharing */
+(function(){
+ const root=document.querySelector('.vb-blog');
+ if(root){
+  const input=root.querySelector('#vb-blog-search'), cards=[...root.querySelectorAll('.vb-card')], buttons=[...root.querySelectorAll('[data-blog-filter]')], empty=root.querySelector('.vb-empty');
+  let category='all';
+  const apply=()=>{
+   const term=(input?.value||'').trim().toLocaleLowerCase();
+   let visible=0;
+   cards.forEach(card=>{
+    const matchesCategory=category==='all'||card.dataset.category===category;
+    const matchesSearch=(card.dataset.search||'').includes(term);
+    card.hidden=!(matchesCategory&&matchesSearch);
+    if(!card.hidden)visible++;
+   });
+   if(empty)empty.hidden=visible!==0;
+  };
+  input?.addEventListener('input',apply);
+  buttons.forEach(button=>button.addEventListener('click',()=>{
+   category=button.dataset.blogFilter||'all';
+   buttons.forEach(item=>{const selected=item===button;item.classList.toggle('is-active',selected);item.setAttribute('aria-pressed',String(selected))});
+   apply();
+  }));
+  apply();
+ }
+ if(document.querySelector('.vb-article-page')){
+  const shareText=document.querySelector('.vb-article-hero h1')?.textContent||'VINGO Creative Studio';
+  const currentUrl=location.href;
+  document.querySelectorAll('[data-share]').forEach(link=>{
+   const type=link.dataset.share;
+   link.href=type==='whatsapp'?'https://api.whatsapp.com/send?text='+encodeURIComponent(shareText+' — '+currentUrl):'https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(currentUrl);
+   link.target='_blank';link.rel='noopener noreferrer';
+  });
+  document.querySelectorAll('.vb-copy-link').forEach(button=>{
+   button.addEventListener('click',async()=>{
+    const original=button.textContent;
+    try{await navigator.clipboard.writeText(currentUrl);button.textContent=document.documentElement.lang.startsWith('pt')?'Link copiado!':'Link copied!';}
+    catch(e){button.textContent=document.documentElement.lang.startsWith('pt')?'Copie o endereço do navegador':'Copy the browser address';}
+    setTimeout(()=>{button.textContent=original},2200);
+   });
+  });
+ }
+})();
