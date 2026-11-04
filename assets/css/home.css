@@ -1232,3 +1232,44 @@ html body .nav-shell .floating-nav .nav a:hover{color:#83bdff!important}
 html body .nav-shell .floating-nav .locale{border-color:rgba(130,179,235,.25)!important}
 html body .nav-shell .floating-nav .circle-arrow{background:#0a2b52!important;color:#88c0ff!important}
 @media(max-width:890px){html body .nav-shell .floating-nav .nav{background:#0a2342!important;border-color:#294f76!important}}
+
+
+/* VINGO v38 — premium services and differentiators on the bilingual homepage */
+html body #services.home-services-v38{padding:94px 0 105px;background:#f7f9fc;color:#0b223e}
+html body #services.home-services-v38 .services-intro-v38{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,.75fr);align-items:end;gap:48px;margin-bottom:38px}
+html body #services.home-services-v38 .services-intro-v38 h1{font:800 clamp(40px,4.2vw,56px)/1.12 Manrope,Arial,sans-serif!important;letter-spacing:-.06em;margin:0!important;color:#091e38}
+html body #services.home-services-v38 .services-intro-v38 h1 em{font-style:normal;color:#387fd0}
+html body #services.home-services-v38 .services-intro-v38 p{font:400 16px/1.8 'DM Sans',Arial,sans-serif!important;color:#65788d;margin:0!important}
+html body #services.home-services-v38 .home-services-title-v38{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-top:1px solid #d8e3ed;margin-bottom:20px}
+html body #services.home-services-v38 .home-services-title-v38 h2{font:800 clamp(28px,2.8vw,35px)/1.2 Manrope,Arial,sans-serif!important;color:#0a2644;margin:0!important;letter-spacing:-.05em}
+html body #services.home-services-v38 .home-services-title-v38>span{font-size:12px;font-weight:800;color:#557ea9;letter-spacing:.16em}
+html body #services.home-services-v38 .home-services-grid-v38{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:21px}
+html body #services.home-services-v38 .home-service-card-v38{border:1px solid #e1e8f1;border-radius:19px;background:#fff;min-height:302px;padding:34px 25px 31px;box-shadow:0 13px 34px rgba(12,39,71,.045);display:flex;align-items:center;flex-direction:column;text-align:center;transition:transform .23s,box-shadow .23s,border-color .23s}
+html body #services.home-services-v38 .home-service-card-v38:hover{transform:translateY(-4px);border-color:#bbd4ee;box-shadow:0 22px 43px rgba(11,39,73,.09)}
+html body #services.home-services-v38 .home-service-icon-v38{display:grid;place-items:center;width:46px;height:49px;margin-bottom:20px;color:#4586c7}
+html body #services.home-services-v38 .home-service-icon-v38 svg{width:35px;height:35px}
+html body #services.home-services-v38 .home-service-card-v38 h3{font:800 clamp(21px,1.8vw,24px)/1.27 Manrope,Arial,sans-serif!important;letter-spacing:-.045em;color:#0e2742;margin:0 0 15px!important}
+html body #services.home-services-v38 .home-service-card-v38 p{font:400 16px/1.7 'DM Sans',Arial,sans-serif!important;color:#62758b!important;margin:0 0 22px!important;max-width:310px}
+html body #services.home-services-v38 .home-service-card-v38 a{margin-top:auto;color:#3177b8;font-weight:800;font-size:13px;line-height:1.4;text-decoration:none;border-bottom:1px solid #c8d9e9;padding-bottom:4px}
+html body #services.home-services-v38 .home-service-card-v38 a:hover{color:#0a315b}
+html body .home-services-cta-v38,html body .home-diff-cta-v38{display:flex;justify-content:center;margin-top:37px}
+html body .home-pill-v38{display:inline-flex;gap:22px;align-items:center;justify-content:space-between;background:#0a2647;color:#fff!important;padding:8px 9px 8px 25px;border-radius:999px;text-decoration:none;font-weight:800;font-size:14px;min-height:55px}
+html body .home-pill-v38:hover{background:#164a7c}
+html body .pill-arrow-v38{display:grid;place-items:center;background:#5da4fa;color:#0b2845;border-radius:50%;width:38px;height:38px;font-size:19px}
+html body #diferenciais.home-diff-v38{background:#f6f8fb;padding:104px 0 105px;color:#0d2746}
+html body #diferenciais.home-diff-v38 .home-diff-heading-v38{text-align:center;max-width:770px;margin:0 auto 44px}
+html body #diferenciais.home-diff-v38 .home-diff-heading-v38 h2{font:800 clamp(32px,3.2vw,40px)/1.18 Manrope,Arial,sans-serif!important;margin:0 0 18px!important;letter-spacing:-.05em;color:#0d2746}
+html body #diferenciais.home-diff-v38 .home-diff-heading-v38 h2 em{font-style:normal;color:#357dc8}
+html body #diferenciais.home-diff-v38 .home-diff-heading-v38 p{font:400 16px/1.75 'DM Sans',Arial,sans-serif!important;color:#61748b;margin:0 auto!important;max-width:620px}
+html body #diferenciais.home-diff-v38 .home-diff-grid-v38{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+html body #diferenciais.home-diff-v38 .home-diff-card-v38{position:relative;min-height:315px;display:flex;flex-direction:column;align-items:center;text-align:center;background:#fff;padding:32px 19px 31px;border:1px solid #e1e8f1;border-bottom:4px solid #4c9ce7;border-radius:15px 15px 12px 12px;box-shadow:0 13px 34px rgba(12,39,71,.045);transition:transform .2s,box-shadow .2s}
+html body #diferenciais.home-diff-v38 .home-diff-card-v38:hover{transform:translateY(-3px);box-shadow:0 20px 42px rgba(12,39,71,.09)}
+html body #diferenciais.home-diff-v38 .home-diff-icon-v38{width:76px;height:76px;border-radius:50%;background:#318bd0;color:#fff;display:grid;place-items:center;margin:0 auto 24px;flex-shrink:0}
+html body #diferenciais.home-diff-v38 .home-diff-icon-v38 svg{width:39px;height:39px;stroke:currentColor}
+html body #diferenciais.home-diff-v38 .home-diff-card-v38 h3{font:800 clamp(20px,1.7vw,23px)/1.28 Manrope,Arial,sans-serif!important;color:#0c376d;margin:0 0 12px!important;letter-spacing:-.04em}
+html body #diferenciais.home-diff-v38 .home-diff-card-v38 p{font:400 16px/1.65 'DM Sans',Arial,sans-serif!important;color:#5e7188;margin:0!important}
+html body #diferenciais.home-diff-v38 .home-diff-cta-v38{margin-top:40px}
+@media(max-width:1050px){html body #diferenciais.home-diff-v38 .home-diff-grid-v38{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){html body #services.home-services-v38 .services-intro-v38{grid-template-columns:1fr;gap:20px}html body #services.home-services-v38 .home-services-grid-v38{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){html body #services.home-services-v38,html body #diferenciais.home-diff-v38{padding:72px 0}html body #services.home-services-v38 .services-intro-v38 h1{font-size:38px!important}html body #services.home-services-v38 .home-services-grid-v38,html body #diferenciais.home-diff-v38 .home-diff-grid-v38{grid-template-columns:1fr}html body #services.home-services-v38 .home-service-card-v38,html body #diferenciais.home-diff-v38 .home-diff-card-v38{min-height:0}html body .home-pill-v38{width:100%}}
+@media(prefers-reduced-motion:reduce){html body #services.home-services-v38 .home-service-card-v38,html body #diferenciais.home-diff-v38 .home-diff-card-v38{transition:none}}
