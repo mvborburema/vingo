@@ -111,3 +111,37 @@ a.innerHTML=isPt?brazil:usa;
   });
  }
 })();
+
+
+/* VINGO Contact v40 — honest form preview; no endpoint configured */
+(function(){
+ const form=document.querySelector('.vc-contact-form');
+ if(!form)return;
+ form.addEventListener('submit',async function(e){
+  e.preventDefault();
+  if(!form.reportValidity())return;
+  const lang=form.dataset.contactLang||'pt';
+  const d=new FormData(form);
+  const message=(lang==='en'?
+   'VINGO — New project enquiry\nName: ':'VINGO — Novo contato\nNome: ')
+   +String(d.get('name')||'').trim()
+   +'\nE-mail: '+String(d.get('email')||'').trim()
+   +'\n'+(lang==='en'?'Phone: ':'Telefone: ')+String(d.get('phone')||'').trim()
+   +'\n'+(lang==='en'?'Project: ':'Projeto: ')+String(d.get('message')||'').trim();
+  const status=form.querySelector('.vc-form-status');
+  const fallback=form.querySelector('.vc-copy-fallback');
+  try{
+   await navigator.clipboard.writeText(message);
+   if(fallback)fallback.hidden=true;
+   status.textContent=lang==='en'?
+    'Message prepared and copied. Send it once a contact email or WhatsApp is available.':
+    'Mensagem preparada e copiada. Envie quando o e-mail ou WhatsApp de contato estiver disponível.';
+  }catch(err){
+   if(fallback){fallback.hidden=false;fallback.value=message;fallback.focus();fallback.select();}
+   status.textContent=lang==='en'?
+    'Automatic copying was blocked. Copy the prepared message from the field below.':
+    'A cópia automática foi bloqueada. Copie a mensagem preparada no campo abaixo.';
+  }
+  status.hidden=false;
+ });
+})();
