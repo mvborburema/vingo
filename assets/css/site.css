@@ -69,3 +69,53 @@ html body .site-header .menu-toggle{display:none}
  html body .site-header .brand img{width:115px!important}
  html body .site-header .header-end{gap:8px!important}
 }
+
+
+/* VINGO v36 — single visual header design for all internal pages, mirroring Home */
+html body .internal-nav-shell {
+ position:relative; top:auto; left:auto; width:100%; z-index:200;
+ padding:14px 22px 0; background:#061628;
+}
+html body .internal-nav-shell .floating-nav {
+ width:min(1140px,100%);height:72px;margin:0 auto;
+ display:flex;align-items:center;justify-content:space-between;gap:25px;
+ padding:8px 9px 8px 25px;border:1px solid rgba(116,166,221,.28);
+ border-radius:100px;background:rgba(7,27,52,.96);
+ box-shadow:0 16px 40px rgba(2,12,31,.27);
+ position:relative;backdrop-filter:blur(19px);-webkit-backdrop-filter:blur(19px);
+}
+html body .internal-nav-shell .brand {width:185px;min-width:155px;display:flex;align-items:center;height:100%;overflow:visible;flex-shrink:0}
+html body .internal-nav-shell .brand img {display:block;width:155px;height:auto;max-height:60px;object-fit:contain}
+html body .internal-nav-shell .nav {display:flex;align-items:center;gap:23px;flex-wrap:nowrap;margin:0 0 0 auto}
+html body .internal-nav-shell .nav a {font:600 13px/1.3 'DM Sans',Arial,sans-serif;color:#dbe7f6;text-decoration:none;white-space:nowrap;transition:color .2s}
+html body .internal-nav-shell .nav a:hover,html body .internal-nav-shell .nav a[aria-current="page"] {color:#85bdff}
+html body .internal-nav-shell .nav-actions{display:flex;align-items:center;gap:14px;flex-shrink:0}
+html body .internal-nav-shell .locale {display:flex;align-items:center;gap:4px;padding:3px;border:1px solid rgba(130,179,235,.25);border-radius:100px}
+html body .internal-nav-shell .lang {width:29px;height:29px;border:0;border-radius:50%;background:transparent;opacity:.65;display:grid;place-items:center;padding:0;cursor:pointer}
+html body .internal-nav-shell .lang.active {background:rgba(255,255,255,.12);opacity:1}
+html body .internal-nav-shell .lang svg{display:block;width:22px;height:16px;border-radius:2px}
+html body .internal-nav-shell .head-cta {display:inline-flex;align-items:center;gap:15px;background:#fff;color:#091c31;border-radius:999px;min-height:45px;padding:6px 6px 6px 18px;white-space:nowrap;font:700 13px/1.3 'DM Sans',Arial,sans-serif;text-decoration:none}
+html body .internal-nav-shell .circle-arrow{background:#0a2b52;color:#88c0ff;width:33px;height:33px;display:grid;place-items:center;border-radius:50%;font-size:18px}
+html body .internal-nav-shell .burger{display:none;border:0;background:transparent;padding:0;width:42px;height:42px;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+html body .internal-nav-shell .burger span{display:block;width:22px;height:2px;background:#fff}
+@media(max-width:1100px){
+ html body .internal-nav-shell .floating-nav{gap:13px;padding-left:17px}
+ html body .internal-nav-shell .brand{width:136px;min-width:128px}
+ html body .internal-nav-shell .brand img{width:128px}
+ html body .internal-nav-shell .nav{gap:13px}
+ html body .internal-nav-shell .nav a{font-size:12px}
+}
+@media(max-width:890px){
+ html body .internal-nav-shell .burger{display:flex}
+ html body .internal-nav-shell .nav{display:none;position:absolute;top:calc(100% + 10px);left:0;right:0;z-index:30;gap:18px;flex-direction:column;align-items:stretch;margin:0;background:#0a2342;border:1px solid #294f76;border-radius:22px;padding:22px;box-shadow:0 30px 50px #0007}
+ html body .internal-nav-shell .nav.open{display:flex}
+ html body .internal-nav-shell .head-cta{display:none}
+ html body .internal-nav-shell .nav-actions{margin-left:auto}
+}
+@media(max-width:600px){
+ html body .internal-nav-shell{padding:12px 12px 0}
+ html body .internal-nav-shell .floating-nav{height:68px;padding:8px 9px 8px 14px}
+ html body .internal-nav-shell .brand{width:115px;min-width:115px}
+ html body .internal-nav-shell .brand img{width:116px}
+ html body .internal-nav-shell .locale{gap:1px}
+}
