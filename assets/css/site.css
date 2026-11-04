@@ -205,3 +205,56 @@ html body .internal-nav-shell .burger span{display:block;width:22px;height:2px;b
 /* Search/filter state and accessible helper text */
 .vb-blog .vb-card[hidden],.vb-blog .vb-empty[hidden]{display:none!important}
 .vb-blog .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+
+/* VINGO Contact v40 — premium bilingual two-column form */
+.vc-contact-page{color:#0a2342;background:#fff}
+.vc-contact-hero{background:linear-gradient(120deg,#06182f,#103a69);padding:72px 0 77px;color:#fff}
+.vc-contact-hero .eyebrow{color:#8dc3ff}
+.vc-contact-hero h1{font:800 clamp(42px,4.4vw,56px)/1.13 Manrope,Arial,sans-serif;letter-spacing:-.058em;max-width:870px;margin:12px 0 18px}
+.vc-contact-hero h1 span{color:#8dc3ff}
+.vc-contact-hero p{max-width:680px;color:#cbdaeb;font-size:17px;line-height:1.75;margin:0}
+.vc-contact-main{padding:100px 0 108px}
+.vc-contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:75px;align-items:start}
+.vc-form-panel{padding:45px 40px 38px;box-shadow:0 16px 50px rgba(7,30,59,.075);border:1px solid #e8eef5;border-radius:16px;background:#fff}
+.vc-small{color:#427bb7;font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.vc-form-panel h2,.vc-contact-info h2{font:800 clamp(29px,2.7vw,35px)/1.2 Manrope,Arial,sans-serif;letter-spacing:-.05em;margin:14px 0 14px;color:#0c294b}
+.vc-form-lead{font-size:16px;line-height:1.75;color:#586e87;margin:0 0 25px}
+.vc-contact-form{display:flex;flex-direction:column;gap:15px}
+.vc-contact-form label{position:absolute;clip:rect(0,0,0,0);clip-path:inset(50%);height:1px;width:1px;overflow:hidden;white-space:nowrap}
+.vc-contact-form input,.vc-contact-form textarea{font:400 16px/1.55 'DM Sans',Arial,sans-serif;border:1px solid #d9e3ed;border-radius:29px;padding:16px 21px;width:100%;background:#fff;color:#0b2947;outline:none;transition:border-color .2s,box-shadow .2s}
+.vc-contact-form input{min-height:57px}
+.vc-contact-form textarea{border-radius:22px;resize:vertical;min-height:136px}
+.vc-contact-form input:focus,.vc-contact-form textarea:focus{border-color:#508fd5;box-shadow:0 0 0 3px rgba(60,133,217,.13)}
+.vc-contact-form input::placeholder,.vc-contact-form textarea::placeholder{color:#8798ac}
+.vc-submit{margin-top:9px;display:inline-flex;align-items:center;gap:28px;justify-content:space-between;align-self:flex-start;background:#0c2b4f;color:#fff;border:0;border-radius:999px;padding:8px 9px 8px 25px;min-height:56px;font:800 14px/1.3 'DM Sans',sans-serif;cursor:pointer}
+.vc-submit:hover{background:#184a7b}
+.vc-submit-arrow{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;background:#61a6f7;color:#08294b;font-size:20px}
+.vc-form-note{margin:21px 0 0;font-size:14px;color:#61758a;line-height:1.65}
+.vc-form-status{background:#eaf4ff;border-left:3px solid #4188d5;border-radius:0 8px 8px 0;color:#0a3761;padding:13px 15px;font-size:14px;line-height:1.6;margin:4px 0 0}
+.vc-copy-fallback{min-height:140px!important;border-radius:12px!important}
+.vc-contact-info{padding-top:24px}
+.vc-info-kicker{font-size:15px;display:flex;align-items:center;gap:17px;color:#385671}
+.vc-info-kicker>span{width:43px;height:2px;background:#438bd0}
+.vc-contact-info h2{margin:19px 0 35px}
+.vc-contact-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:27px 20px}
+.vc-contact-item{display:flex;align-items:flex-start;gap:14px;min-width:0}
+.vc-contact-icon{width:56px;height:56px;min-width:56px;border-radius:50%;background:#0b294b;color:#fff;display:grid;place-items:center}
+.vc-contact-icon svg{width:26px;height:26px}
+.vc-contact-item strong{display:block;font:800 15px/1.45 'DM Sans',sans-serif;color:#0a284a}
+.vc-contact-item p{font-size:15px;line-height:1.6;color:#546c82;margin:4px 0 0;overflow-wrap:anywhere}
+.vc-method{margin-top:42px;padding:30px;border-radius:17px;border:1px solid #dce6f0;background:#f3f7fc}
+.vc-method p{font-size:16px;color:#47617b;line-height:1.75;margin:12px 0 22px}
+.vc-method-cta{display:inline-flex;align-items:center;gap:14px;background:#0c2b4f;color:white;text-decoration:none;border-radius:999px;padding:13px 19px;font-size:14px;font-weight:800}
+.vc-method-cta:hover{background:#215a92}
+.vc-contact-steps{padding:80px 0 92px;background:#f4f8fc}
+.vc-steps-head{margin-bottom:31px}.vc-steps-head h2{font:800 clamp(29px,2.9vw,39px)/1.2 Manrope,Arial,sans-serif;letter-spacing:-.05em;margin:10px 0 12px}
+.vc-steps-head p{font-size:16px;color:#5c7389;margin:0}
+.vc-steps-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+.vc-steps-grid>div{background:#fff;padding:30px;border:1px solid #dbe6f1;border-radius:17px}
+.vc-steps-grid span{font-size:13px;letter-spacing:.15em;font-weight:800;color:#438bd0}
+.vc-steps-grid h3{font:800 clamp(20px,2vw,24px)/1.3 Manrope,Arial,sans-serif;letter-spacing:-.04em;margin:34px 0 0}
+.vc-contact-form [hidden]{display:none!important}
+@media(max-width:1050px){.vc-contact-grid{gap:38px}.vc-form-panel{padding:34px 28px}.vc-contact-items{grid-template-columns:1fr}}
+@media(max-width:760px){.vc-contact-grid{grid-template-columns:1fr}.vc-contact-info{padding-top:0}.vc-contact-items{grid-template-columns:repeat(2,minmax(0,1fr))}.vc-contact-main{padding:65px 0}.vc-steps-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.vc-contact-hero{padding:62px 0}.vc-contact-hero h1{font-size:38px}.vc-form-panel{padding:28px 20px}.vc-contact-items{grid-template-columns:1fr}.vc-submit{width:100%}.vc-contact-steps{padding:62px 0}}
