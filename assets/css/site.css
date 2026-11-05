@@ -309,3 +309,17 @@ html body .internal-nav-shell .burger span{display:block;width:22px;height:2px;b
 @media(max-width:900px){.vp-image-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.vp-image-grid{grid-template-columns:1fr}.vp-gallery-page .vp-gallery-section{padding:56px 0 75px}}
 @media(prefers-reduced-motion:reduce){.vp-image-only img{transition:none}}
+
+
+/* VINGO About v42 — elegant institutional cards, matching approved reference */
+.about-premium .ab-mvv-section{background:#fff!important;padding:95px 0 100px!important}
+.about-premium .ab-mvv-heading{margin-bottom:39px!important}
+.about-premium .ab-mvv-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:24px!important}
+.about-premium .ab-mvv-card{min-height:315px!important;background:#fff!important;border:1px solid #e5eaf1!important;border-radius:16px!important;padding:36px 30px 38px!important;box-shadow:0 12px 34px rgba(10,35,66,.045)!important;align-items:center!important;text-align:center!important;justify-content:flex-start!important}
+.about-premium .ab-mvv-icon{margin:0 auto 25px!important;width:48px!important;height:48px!important;display:grid!important;place-items:center!important;color:#367ebf!important;font-size:inherit!important}
+.about-premium .ab-mvv-icon svg{width:35px;height:35px;display:block}
+.about-premium .ab-mvv-card h3{font:800 23px/1.3 Manrope,Arial,sans-serif!important;letter-spacing:-.04em!important;color:#102c4e!important;margin:0 0 13px!important}
+.about-premium .ab-mvv-card p{font:400 16px/1.72 'DM Sans',Arial,sans-serif!important;color:#63778c!important;margin:0!important;max-width:310px}
+.about-premium .ab-process-grid .ab-step{padding-top:30px!important}
+@media(max-width:950px){.about-premium .ab-mvv-grid{gap:15px!important}.about-premium .ab-mvv-card{padding:32px 21px!important}}
+@media(max-width:700px){.about-premium .ab-mvv-section{padding:72px 0!important}.about-premium .ab-mvv-grid{grid-template-columns:1fr!important;gap:16px!important}.about-premium .ab-mvv-card{min-height:0!important;padding:33px 25px!important}}
