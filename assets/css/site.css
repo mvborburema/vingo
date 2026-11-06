@@ -424,3 +424,56 @@ html body main h2 strong.accent{
   color:#438bdc!important;
   font-style:normal!important;
 }
+
+
+/* VINGO GLOBAL FAQ + H1 ACCENT V2 */
+html body .vingo-faq{max-width:980px!important;margin:0 auto!important;border-top:1px solid #cad9e8!important}
+html body .vingo-faq details{border-bottom:1px solid #cad9e8!important;padding:0!important}
+html body .vingo-faq summary{
+  list-style:none!important;
+  cursor:pointer!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:24px!important;
+  padding:23px 0!important;
+  font:750 19px/1.35 Manrope,Arial,sans-serif!important;
+  color:#102b48!important;
+}
+html body .vingo-faq summary::-webkit-details-marker{display:none!important}
+html body .vingo-faq summary::marker{content:""!important;font-size:0!important}
+html body .vingo-faq summary>span:first-child{min-width:0!important;flex:1!important}
+html body .vingo-faq summary .vingo-faq-plus{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:24px!important;
+  min-width:24px!important;
+  height:24px!important;
+  font-size:24px!important;
+  line-height:1!important;
+  color:#438bdc!important;
+  flex:none!important;
+  font-weight:800!important;
+  transition:transform .2s ease!important;
+}
+html body .vingo-faq details[open] summary .vingo-faq-plus{transform:rotate(45deg)!important}
+html body .vingo-faq details p{
+  margin:0!important;
+  padding:0 48px 23px 0!important;
+  color:#5d7187!important;
+  font-size:16px!important;
+  line-height:1.75!important;
+  max-width:850px!important;
+}
+/* H1 highlight follows the same blue language as H2 */
+html body main h1 em,
+html body main h1 .accent,
+html body main h1 strong.accent{
+  color:#438bdc!important;
+  font-style:normal!important;
+}
+@media(max-width:740px){
+ html body .vingo-faq summary{font-size:17px!important;padding:20px 0!important}
+ html body .vingo-faq details p{font-size:15px!important;padding-right:28px!important}
+}
