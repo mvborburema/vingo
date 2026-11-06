@@ -323,3 +323,12 @@ html body .internal-nav-shell .burger span{display:block;width:22px;height:2px;b
 .about-premium .ab-process-grid .ab-step{padding-top:30px!important}
 @media(max-width:950px){.about-premium .ab-mvv-grid{gap:15px!important}.about-premium .ab-mvv-card{padding:32px 21px!important}}
 @media(max-width:700px){.about-premium .ab-mvv-section{padding:72px 0!important}.about-premium .ab-mvv-grid{grid-template-columns:1fr!important;gap:16px!important}.about-premium .ab-mvv-card{min-height:0!important;padding:33px 25px!important}}
+
+
+/* VINGO TYPE SYSTEM FINAL */
+body main h1{font-family:Manrope,Arial,sans-serif!important;font-size:clamp(42px,4.2vw,56px)!important;line-height:1.08!important;letter-spacing:-.055em!important}
+body main h2{font-family:Manrope,Arial,sans-serif!important;font-size:clamp(30px,3vw,40px)!important;line-height:1.12!important;letter-spacing:-.045em!important}
+body main h3{font-family:Manrope,Arial,sans-serif!important;font-size:clamp(20px,1.7vw,24px)!important;line-height:1.24!important;letter-spacing:-.035em!important}
+body main h1,body main h2,body main h3{overflow-wrap:normal!important;word-break:normal!important}
+body main .service-card h2,body main .project-text h2,body main .blog-text h2,body main .modal-head h2{font-size:24px!important;line-height:1.25!important}
+@media(max-width:740px){body main h1{font-size:38px!important;line-height:1.1!important}body main h2{font-size:30px!important;line-height:1.14!important}body main h3{font-size:21px!important;line-height:1.25!important}body main .service-card h2,body main .project-text h2,body main .blog-text h2,body main .modal-head h2{font-size:22px!important}}
