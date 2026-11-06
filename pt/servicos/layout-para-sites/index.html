@@ -941,6 +941,55 @@ html body .layout-b2b .lb-responsive-item h3{
   .lb-responsive-item{grid-template-columns:42px minmax(0,1fr);gap:14px}
 }
 
+
+/* RESPONSIVIDADE — CORREÇÃO DE OVERFLOW V8 */
+.lb-responsive-refined{overflow:hidden!important}
+.lb-responsive-shell{
+  width:min(1360px,calc(100% - 64px))!important;
+  max-width:1360px!important;
+  margin:0 auto!important;
+}
+.lb-responsive-head{
+  max-width:1280px!important;
+  margin:0 auto 42px!important;
+  text-align:center!important;
+}
+.lb-responsive-head h2{
+  width:100%!important;
+  max-width:1280px!important;
+  margin:10px auto 14px!important;
+  white-space:normal!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  text-wrap:balance!important;
+  font-size:clamp(32px,2.55vw,38px)!important;
+  line-height:1.1!important;
+}
+.lb-responsive-head p{
+  width:min(100%,980px)!important;
+  max-width:980px!important;
+  margin:0 auto!important;
+}
+.lb-responsive-grid{
+  width:100%!important;
+  max-width:1360px!important;
+  margin:0 auto!important;
+}
+@media(min-width:1320px){
+  .lb-responsive-head h2{
+    white-space:normal!important;
+    font-size:36px!important;
+  }
+}
+@media(max-width:1040px){
+  .lb-responsive-shell{width:min(100% - 40px,960px)!important}
+}
+@media(max-width:640px){
+  .lb-responsive-shell{width:min(100% - 32px,560px)!important}
+  .lb-responsive-head{text-align:left!important}
+  .lb-responsive-head h2{font-size:30px!important;white-space:normal!important}
+}
+
 </style></head><body><header class="site-header"><div class="header-inner"><a class="brand" href="../../../pt/index.html" aria-label="VINGO Creative Studio"><img src="../../../assets/img/logo-vingo.png" alt="VINGO Creative Studio"></a><button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Menu">☰</button><nav id="main-nav" aria-label="Main navigation"><a href="../../../pt/index.html" >Home</a><a href="../../../pt/quem-somos/" >Quem Somos</a><a href="../../../pt/servicos/" aria-current=page>Serviços</a><a href="../../../pt/portfolio/" >Portfólio</a><a href="../../../pt/blog/" >Blog</a><a href="../../../pt/contato/" >Contato</a></nav><div class="header-end"><div class="language"><a href="../../../pt/index.html" lang="pt" aria-label="Português">🇧🇷</a><a href="../../../en/index.html" lang="en" aria-label="English">🇺🇸</a></div><a class="pill pill-light header-cta" href="../../../pt/contato/">Solicitar orçamento<span class="circle">↗</span></a></div></div></header><main id="main-content" class="layout-b2b">
 <section class="lb-hero"><div class="shell lb-hero-grid"><div><span class="lb-kicker">VINGO / PARCERIA B2B PARA AGÊNCIAS</span><h1>Layout para Site Profissional <em>para Agências</em></h1><p>Sua agência precisa de um parceiro especializado na criação de layouts para sites? A VINGO Creative Studio desenvolve interfaces personalizadas, modernas e responsivas para projetos de agências de marketing digital, publicidade, SEO e desenvolvimento. Atuamos nos bastidores da operação, com foco na qualidade visual, na organização das informações e na experiência de navegação.</p><p>Transformamos briefings e referências em layouts consistentes para desktop e mobile. Quando contratado, também entregamos o desenvolvimento front-end em HTML, CSS e JavaScript, para que a equipe da agência possa seguir com a implementação do projeto. Não comercializamos a criação completa de sites.</p><div class="lb-hero-actions"><a class="lb-btn lb-btn-primary" href="../../contato/">Solicitar parceria B2B <span>↗</span></a><a class="lb-btn lb-btn-secondary" href="../../portfolio/">Conhecer portfólio <span>→</span></a></div></div><div class="lb-hero-visual" aria-label="Exemplos visuais de layouts desenvolvidos pela VINGO"><img class="lb-hero-img" src="../../../assets/img/sado-luiz.jpg" alt="Exemplo de layout para site apresentado em desktop"><img class="lb-hero-img second" src="../../../assets/img/donna-santa.jpg" alt="Exemplo de interface digital desenvolvida pela VINGO"><span class="lb-float one">DESKTOP + MOBILE</span><span class="lb-float two">UI/UX + FRONT-END</span></div></div></section>
 <div class="lb-strip"><div><span>01</span>Layout personalizado</div><div><span>02</span>Design responsivo</div><div><span>03</span>UI/UX para agências</div><div><span>04</span>HTML · CSS · JS</div></div>
