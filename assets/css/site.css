@@ -415,3 +415,12 @@ html body main[class] .section-intro>p{
  .vingo-faq summary{font-size:17px;padding:20px 0}
  .vingo-faq details p{font-size:15px;padding-right:28px}
 }
+
+
+/* VINGO H2 ACCENT GLOBAL V1 */
+html body main h2 em,
+html body main h2 .accent,
+html body main h2 strong.accent{
+  color:#438bdc!important;
+  font-style:normal!important;
+}
