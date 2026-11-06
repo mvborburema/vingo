@@ -1282,3 +1282,60 @@ html body #diferenciais.home-diff-v38 .home-diff-cta-v38{margin-top:40px}
 .services .section-intro{grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr)!important}
 @media(max-width:900px){.hero-desc{max-width:720px!important}.services .section-intro{grid-template-columns:1fr!important}}
 @media(max-width:650px){.hero-display{font-size:42px!important;line-height:1.08!important}.hero-desc{font-size:16px!important;line-height:1.6!important;max-width:100%!important}.services .section-intro h1{font-size:38px!important}}
+
+
+/* VINGO HOME LINE CONTROL V2 */
+html body main#main .hero-display{
+  font-size:clamp(46px,4.8vw,72px)!important;
+  line-height:1.07!important;
+  width:min(100%,1140px)!important;
+  max-width:1140px!important;
+}
+html body main#main .hero-desc{
+  width:min(100%,960px)!important;
+  max-width:960px!important;
+  font-size:17px!important;
+  line-height:1.62!important;
+}
+html body main#main .section-intro h1{
+  font-size:clamp(40px,4vw,56px)!important;
+  line-height:1.08!important;
+  width:min(100%,1080px)!important;
+  max-width:1080px!important;
+}
+html body main#main .section-intro h2,
+html body main#main .v23-portfolio-copy h2,
+html body main#main .about h2,
+html body main#main .home-diff-heading-v38 h2,
+html body main#main .faq h2,
+html body main#main .contact h2{
+  font-size:clamp(30px,3vw,40px)!important;
+  line-height:1.12!important;
+  max-width:1040px!important;
+}
+html body main#main h3{
+  font-size:clamp(20px,1.7vw,24px)!important;
+  line-height:1.24!important;
+}
+html body main#main .section-intro>p,
+html body main#main .v23-portfolio-copy>p,
+html body main#main .home-diff-heading-v38>p,
+html body main#main .faq-intro-v13>p,
+html body main#main .v30-contact-lead>p{
+  max-width:820px!important;
+}
+@media(max-width:900px){
+ html body main#main .hero-desc{width:min(100%,760px)!important;max-width:760px!important}
+}
+@media(max-width:650px){
+ html body main#main .hero-display{font-size:42px!important;line-height:1.08!important;width:100%!important}
+ html body main#main .hero-desc{font-size:16px!important;line-height:1.6!important;width:100%!important;max-width:100%!important}
+ html body main#main .section-intro h1{font-size:38px!important}
+ html body main#main .section-intro h2,
+ html body main#main .v23-portfolio-copy h2,
+ html body main#main .about h2,
+ html body main#main .home-diff-heading-v38 h2,
+ html body main#main .faq h2,
+ html body main#main .contact h2{font-size:30px!important}
+ html body main#main h3{font-size:21px!important}
+}
