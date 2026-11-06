@@ -20,6 +20,6 @@ modal.querySelectorAll('[data-close]').forEach(el=>el.addEventListener('click',d
 document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click', () => {
  const en = button.dataset.lang === 'en';
  const el = document.querySelector('[data-extra="v30ServicesHeading"]');
- if(el) el.textContent = en ? 'Our services' : 'Nossos serviços';
+ if(el) el.textContent = en ? 'Design & Front-end Services for Agencies' : 'Serviços de Design e Front-end para Agências';
 }));
 ;(()=>{const labels={pt:"Ver todos os serviços",en:"Explore all services"};const update=lang=>{document.querySelectorAll('[data-extra="v38AllServices"]').forEach(el=>el.textContent=labels[lang]||labels.pt)};document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>update(b.dataset.lang)));if(/\/en\/(?:index\.html)?$/.test(location.pathname))update('en')})();
