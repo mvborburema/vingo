@@ -32,6 +32,50 @@ body main .modal-head h2{font-size:24px!important;line-height:1.25!important}
  body main .blog-text h2,
  body main .modal-head h2{font-size:22px!important}
 }
+
+/* BLOG — CORREÇÃO DE LAYOUT E ESCALA V2 */
+.vb-blog .shell{max-width:1400px!important;padding-left:30px!important;padding-right:30px!important}
+.vb-blog-intro .shell{max-width:1400px!important}
+.vb-blog-intro h1{max-width:1180px!important}
+.vb-blog-intro p{max-width:860px!important}
+.vb-blog-list{padding:80px 0 96px!important}
+.vb-blog-tools{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:28px!important;margin-bottom:38px!important}
+.vb-blog-tools h2{font-size:clamp(32px,3vw,40px)!important;line-height:1.12!important;margin:0!important}
+.vb-search{flex:0 0 350px!important;max-width:350px!important}
+.vb-blog-layout{display:grid!important;grid-template-columns:220px minmax(0,1fr)!important;gap:32px!important;align-items:start!important}
+.vb-sidebar{position:sticky!important;top:110px!important}
+.vb-cards{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:20px!important}
+.vb-card{min-width:0!important}
+.vb-card-content{padding:24px 20px 26px!important}
+html body .vb-blog .vb-card h2{
+  font-size:clamp(24px,2vw,30px)!important;
+  line-height:1.12!important;
+  letter-spacing:-.045em!important;
+  margin:0!important;
+}
+html body .vb-blog .vb-card h2 a{color:#081a31!important;text-decoration:none!important}
+.vb-card-content p{font-size:15px!important;line-height:1.72!important}
+.vb-cover{min-height:178px!important}
+.vb-cover-graphic{font-size:clamp(23px,2.1vw,31px)!important;line-height:1.02!important}
+.vb-sidebar h3{font-size:22px!important}
+@media(max-width:1180px){
+  .vb-blog .shell{max-width:1120px!important}
+  .vb-blog-layout{grid-template-columns:190px minmax(0,1fr)!important;gap:24px!important}
+  .vb-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:820px){
+  .vb-blog-tools{align-items:stretch!important;flex-direction:column!important}
+  .vb-search{flex:none!important;width:100%!important;max-width:none!important}
+  .vb-blog-layout{grid-template-columns:1fr!important}
+  .vb-sidebar{position:static!important}
+  .vb-filter-list{display:flex!important;flex-wrap:wrap!important}
+}
+@media(max-width:620px){
+  .vb-blog .shell{padding-left:20px!important;padding-right:20px!important}
+  .vb-cards{grid-template-columns:1fr!important}
+  html body .vb-blog .vb-card h2{font-size:26px!important}
+}
+
 </style></head><body><header class="site-header"><div class="header-inner"><a class="brand" href="../../pt/index.html" aria-label="VINGO Creative Studio"><img src="../../assets/img/logo-vingo.png" alt="VINGO Creative Studio"></a><button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Menu">☰</button><nav id="main-nav" aria-label="Main navigation"><a href="../../pt/index.html" >Home</a><a href="../../pt/quem-somos/" >Quem Somos</a><a href="../../pt/servicos/" >Serviços</a><a href="../../pt/portfolio/" >Portfólio</a><a href="../../pt/blog/" aria-current=page>Blog</a><a href="../../pt/contato/" >Contato</a></nav><div class="header-end"><div class="language"><a href="../../pt/index.html" lang="pt" aria-label="Português">🇧🇷</a><a href="../../en/index.html" lang="en" aria-label="English">🇺🇸</a></div><a class="pill pill-light header-cta" href="../../pt/contato/">Solicitar orçamento<span class="circle">↗</span></a></div></div></header><main id="main-content" class="vb-blog"><section class="vb-blog-intro"><div class="shell"><div class="eyebrow">BLOG & CONTEÚDO</div><h1>Ideias sobre design, código <span>e presença digital.</span></h1><p>Conteúdos sobre web design, SEO, UI/UX e desenvolvimento front-end.</p></div></section>
 <section class="vb-blog-list"><div class="shell"><div class="vb-blog-tools"><h2>Últimos artigos</h2><label class="vb-search"><span class="sr-only">Buscar artigos</span><input type="search" id="vb-blog-search" placeholder="Buscar no blog" aria-label="Buscar no blog"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></svg></label></div>
 <div class="vb-blog-layout"><aside class="vb-sidebar"><h3>Categorias</h3><div class="vb-filter-list"><button type="button" class="vb-filter is-active" data-blog-filter="all" aria-pressed="true">Todos</button><button type="button" class="vb-filter" data-blog-filter="web design" aria-pressed="false">Web Design</button><button type="button" class="vb-filter" data-blog-filter="seo" aria-pressed="false">SEO</button><button type="button" class="vb-filter" data-blog-filter="ui/ux" aria-pressed="false">UI/UX</button></div></aside><div class="vb-results"><div class="vb-cards"><article class="vb-card" data-category="web design" data-search="layout para site: como planejar uma experiência profissional como organizar hierarquia visual, conteúdo e responsividade antes de desenvolver. web design">
