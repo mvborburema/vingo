@@ -1339,3 +1339,49 @@ html body main#main .v30-contact-lead>p{
  html body main#main .contact h2{font-size:30px!important}
  html body main#main h3{font-size:21px!important}
 }
+
+
+/* VINGO HOME FAQ + H2 ACCENT V1 */
+html body main#main .vingo-faq{max-width:980px;margin:0 auto;border-top:1px solid #cad9e8}
+html body main#main .vingo-faq details{border-bottom:1px solid #cad9e8;padding:0}
+html body main#main .vingo-faq summary{
+  list-style:none!important;
+  cursor:pointer;
+  display:flex!important;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding:23px 0;
+  font:750 19px/1.35 Manrope,Arial,sans-serif!important;
+  color:#102b48!important;
+}
+html body main#main .vingo-faq summary::-webkit-details-marker{display:none!important}
+html body main#main .vingo-faq summary::marker{content:""!important}
+html body main#main .vingo-faq summary span:first-child{min-width:0}
+html body main#main .vingo-faq summary .vingo-faq-plus{
+  font-size:24px!important;
+  line-height:1!important;
+  color:#438bdc!important;
+  flex:none;
+  font-weight:800!important;
+  transition:transform .2s ease;
+}
+html body main#main .vingo-faq details[open] summary .vingo-faq-plus{transform:rotate(45deg)}
+html body main#main .vingo-faq details p{
+  margin:0!important;
+  padding:0 48px 23px 0!important;
+  color:#5d7187!important;
+  font-size:16px!important;
+  line-height:1.75!important;
+  max-width:850px!important;
+}
+html body main#main h2 em,
+html body main#main h2 .accent,
+html body main#main h2 strong.accent{
+  color:#438bdc!important;
+  font-style:normal!important;
+}
+@media(max-width:740px){
+ html body main#main .vingo-faq summary{font-size:17px!important;padding:20px 0}
+ html body main#main .vingo-faq details p{font-size:15px!important;padding-right:28px!important}
+}
