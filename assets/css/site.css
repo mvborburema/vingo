@@ -400,3 +400,18 @@ html body main[class] .section-intro>p{
  html body main[class] .lb-hero p,
  html body main[class] .vb-blog-intro p{width:100%!important;max-width:100%!important}
 }
+
+
+/* VINGO GLOBAL FAQ COMPONENT V1 */
+.vingo-faq{max-width:980px;margin:0 auto;border-top:1px solid #cad9e8}
+.vingo-faq details{border-bottom:1px solid #cad9e8;padding:0}
+.vingo-faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:23px 0;font:750 19px/1.35 Manrope,Arial,sans-serif;color:#102b48}
+.vingo-faq summary::-webkit-details-marker{display:none}
+.vingo-faq summary span:first-child{min-width:0}
+.vingo-faq summary .vingo-faq-plus{font-size:24px;line-height:1;color:#438bdc;flex:none;font-weight:800;transition:transform .2s ease}
+.vingo-faq details[open] summary .vingo-faq-plus{transform:rotate(45deg)}
+.vingo-faq details p{margin:0;padding:0 48px 23px 0;color:#5d7187;font-size:16px;line-height:1.75;max-width:850px}
+@media(max-width:740px){
+ .vingo-faq summary{font-size:17px;padding:20px 0}
+ .vingo-faq details p{font-size:15px;padding-right:28px}
+}
