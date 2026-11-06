@@ -1385,3 +1385,12 @@ html body main#main h2 strong.accent{
  html body main#main .vingo-faq summary{font-size:17px!important;padding:20px 0}
  html body main#main .vingo-faq details p{font-size:15px!important;padding-right:28px!important}
 }
+
+
+/* VINGO HOME H1 ACCENT V2 */
+html body main#main h1 em,
+html body main#main h1 .accent,
+html body main#main h1 strong.accent{
+  color:#438bdc!important;
+  font-style:normal!important;
+}
