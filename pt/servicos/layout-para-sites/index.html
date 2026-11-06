@@ -797,6 +797,150 @@ html body .layout-b2b .lb-responsive-note h3{
   .lb-responsive-note{grid-template-columns:42px minmax(0,1fr);gap:15px}
 }
 
+
+/* RESPONSIVIDADE — VERSÃO ESTÁVEL V7 */
+.lb-responsive-refined{
+  background:#f5f8fc!important;
+  padding:104px 0!important;
+}
+.lb-responsive-shell{
+  width:min(1360px,calc(100% - 64px));
+  margin:0 auto;
+}
+.lb-responsive-head{
+  text-align:center;
+  max-width:1280px;
+  margin:0 auto 42px;
+}
+.lb-responsive-head h2{
+  margin:10px auto 14px!important;
+  max-width:1280px!important;
+  font-size:clamp(34px,2.8vw,40px)!important;
+  line-height:1.08!important;
+  text-wrap:balance;
+}
+.lb-responsive-head p{
+  margin:0 auto!important;
+  max-width:980px!important;
+  color:#61748b!important;
+  font-size:16px!important;
+  line-height:1.72!important;
+}
+.lb-responsive-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.12fr) minmax(380px,.88fr);
+  gap:26px;
+  align-items:stretch;
+}
+.lb-responsive-image{
+  position:relative;
+  overflow:hidden;
+  min-height:560px;
+  border-radius:22px;
+  background:#e9eef5;
+  border:1px solid #d9e4ef;
+  box-shadow:0 22px 55px rgba(9,25,49,.07);
+}
+.lb-responsive-image img{
+  width:100%;
+  height:100%;
+  min-height:560px;
+  object-fit:cover;
+  display:block;
+}
+.lb-responsive-image:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(0deg,rgba(7,26,48,.78),rgba(7,26,48,0) 50%);
+}
+.lb-responsive-image-label{
+  position:absolute;
+  z-index:2;
+  left:28px;
+  right:28px;
+  bottom:26px;
+  color:#fff;
+}
+.lb-responsive-image-label span{
+  display:block;
+  margin-bottom:7px;
+  color:#8bbcf2;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.15em;
+}
+.lb-responsive-image-label strong{
+  display:block;
+  max-width:580px;
+  font:800 23px/1.2 Manrope,Arial,sans-serif;
+}
+.lb-responsive-panel{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:#fff;
+  border:1px solid #d9e4ef;
+  border-radius:22px;
+  padding:34px;
+  box-shadow:0 22px 55px rgba(9,25,49,.05);
+}
+.lb-responsive-panel-intro{
+  padding-bottom:26px;
+  border-bottom:1px solid #e1e8f1;
+  margin-bottom:4px;
+}
+.lb-responsive-panel-intro h3{
+  margin:7px 0 10px!important;
+}
+.lb-responsive-panel-intro p,
+.lb-responsive-item p{
+  margin:0!important;
+  color:#61748b!important;
+  font-size:15.5px!important;
+  line-height:1.72!important;
+}
+.lb-responsive-item{
+  display:grid;
+  grid-template-columns:46px minmax(0,1fr);
+  gap:18px;
+  padding:26px 0;
+  border-bottom:1px solid #e1e8f1;
+}
+.lb-responsive-item:last-child{border-bottom:0;padding-bottom:0}
+.lb-responsive-item .lb-icon{margin:0}
+.lb-responsive-label{
+  display:block;
+  color:#438bdc;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.14em;
+  margin-bottom:7px;
+}
+html body .layout-b2b .lb-responsive-item h3{
+  margin:0 0 9px!important;
+  color:#0d2746!important;
+}
+@media(min-width:1320px){
+  .lb-responsive-head h2{white-space:nowrap;font-size:36px!important}
+}
+@media(max-width:1040px){
+  .lb-responsive-grid{grid-template-columns:1fr}
+  .lb-responsive-image{min-height:430px}
+  .lb-responsive-image img{min-height:430px}
+}
+@media(max-width:640px){
+  .lb-responsive-refined{padding:76px 0!important}
+  .lb-responsive-shell{width:min(100% - 32px,560px)}
+  .lb-responsive-head{text-align:left;margin-bottom:32px}
+  .lb-responsive-head h2{font-size:30px!important;white-space:normal!important}
+  .lb-responsive-head p{max-width:100%!important}
+  .lb-responsive-image{min-height:300px;border-radius:18px}
+  .lb-responsive-image img{min-height:300px}
+  .lb-responsive-panel{padding:24px;border-radius:18px}
+  .lb-responsive-item{grid-template-columns:42px minmax(0,1fr);gap:14px}
+}
+
 </style></head><body><header class="site-header"><div class="header-inner"><a class="brand" href="../../../pt/index.html" aria-label="VINGO Creative Studio"><img src="../../../assets/img/logo-vingo.png" alt="VINGO Creative Studio"></a><button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Menu">☰</button><nav id="main-nav" aria-label="Main navigation"><a href="../../../pt/index.html" >Home</a><a href="../../../pt/quem-somos/" >Quem Somos</a><a href="../../../pt/servicos/" aria-current=page>Serviços</a><a href="../../../pt/portfolio/" >Portfólio</a><a href="../../../pt/blog/" >Blog</a><a href="../../../pt/contato/" >Contato</a></nav><div class="header-end"><div class="language"><a href="../../../pt/index.html" lang="pt" aria-label="Português">🇧🇷</a><a href="../../../en/index.html" lang="en" aria-label="English">🇺🇸</a></div><a class="pill pill-light header-cta" href="../../../pt/contato/">Solicitar orçamento<span class="circle">↗</span></a></div></div></header><main id="main-content" class="layout-b2b">
 <section class="lb-hero"><div class="shell lb-hero-grid"><div><span class="lb-kicker">VINGO / PARCERIA B2B PARA AGÊNCIAS</span><h1>Layout para Site Profissional <em>para Agências</em></h1><p>Sua agência precisa de um parceiro especializado na criação de layouts para sites? A VINGO Creative Studio desenvolve interfaces personalizadas, modernas e responsivas para projetos de agências de marketing digital, publicidade, SEO e desenvolvimento. Atuamos nos bastidores da operação, com foco na qualidade visual, na organização das informações e na experiência de navegação.</p><p>Transformamos briefings e referências em layouts consistentes para desktop e mobile. Quando contratado, também entregamos o desenvolvimento front-end em HTML, CSS e JavaScript, para que a equipe da agência possa seguir com a implementação do projeto. Não comercializamos a criação completa de sites.</p><div class="lb-hero-actions"><a class="lb-btn lb-btn-primary" href="../../contato/">Solicitar parceria B2B <span>↗</span></a><a class="lb-btn lb-btn-secondary" href="../../portfolio/">Conhecer portfólio <span>→</span></a></div></div><div class="lb-hero-visual" aria-label="Exemplos visuais de layouts desenvolvidos pela VINGO"><img class="lb-hero-img" src="../../../assets/img/sado-luiz.jpg" alt="Exemplo de layout para site apresentado em desktop"><img class="lb-hero-img second" src="../../../assets/img/donna-santa.jpg" alt="Exemplo de interface digital desenvolvida pela VINGO"><span class="lb-float one">DESKTOP + MOBILE</span><span class="lb-float two">UI/UX + FRONT-END</span></div></div></section>
 <div class="lb-strip"><div><span>01</span>Layout personalizado</div><div><span>02</span>Design responsivo</div><div><span>03</span>UI/UX para agências</div><div><span>04</span>HTML · CSS · JS</div></div>
@@ -824,30 +968,34 @@ html body .layout-b2b .lb-responsive-note h3{
 
 <section class="lb-section lb-responsive-refined"><div class="lb-responsive-shell">
 <div class="lb-responsive-head">
-<div><span class="lb-eyebrow">RESPONSIVIDADE</span><h2>Layout para Site Responsivo: <em>Uma Experiência Adaptada a Cada Tela</em></h2></div>
+<span class="lb-eyebrow">RESPONSIVIDADE</span>
+<h2>Layout para Site Responsivo: <em>Uma Experiência Adaptada a Cada Tela</em></h2>
 <p>Um projeto responsivo adapta a apresentação dos elementos conforme o tamanho da tela e a maneira como o usuário interage com a interface.</p>
 </div>
 
-<div class="lb-responsive-stage">
-<div class="lb-desktop-frame">
-<div class="lb-browser-bar"><span></span><span></span><span></span><small>DESKTOP / 1440PX</small></div>
+<div class="lb-responsive-grid">
+<div class="lb-responsive-image">
 <img src="../../../assets/img/terere-shop.jpg" alt="Exemplo de layout responsivo apresentado em desktop">
-</div>
-<div class="lb-phone-frame" aria-label="Representação visual da adaptação mobile">
-<div class="lb-phone-notch"></div>
-<div class="lb-phone-screen"><img src="../../../assets/img/terere-shop.jpg" alt="Exemplo do mesmo projeto adaptado para mobile"></div>
-<div class="lb-phone-label">MOBILE</div>
-</div>
-<div class="lb-stage-copy">
-<span class="lb-responsive-label">DESKTOP + MOBILE</span>
-<strong>O mesmo projeto, reorganizado para cada contexto de uso.</strong>
-<p>Não é apenas reduzir. É repensar proporções, ordem dos elementos, áreas de toque e leitura.</p>
-</div>
+<div class="lb-responsive-image-label"><span>DESKTOP</span><strong>Composição ampla, hierarquia clara e melhor aproveitamento visual.</strong></div>
 </div>
 
-<div class="lb-responsive-notes">
-<div class="lb-responsive-note"><span class="lb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10 5h4M10 19h4"/></svg></span><div><span class="lb-responsive-label">EXPERIÊNCIA MOBILE</span><h3>Layout para dispositivos móveis</h3><p>Em smartphones, menus, botões, imagens e formulários precisam ser planejados para telas menores e navegação por toque. A adaptação muitas vezes exige reorganizar componentes, não apenas reduzir o layout original.</p></div></div>
-<div class="lb-responsive-note"><span class="lb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5M8 11l2 2 4-4"/></svg></span><div><span class="lb-responsive-label">ESTRUTURA PARA SEO</span><h3>Responsividade e SEO</h3><p>O Google utiliza principalmente a versão móvel do conteúdo para indexação. O design responsivo ajuda a manter informações e links acessíveis, mas não garante sozinho posições nos resultados de busca.</p></div></div>
+<div class="lb-responsive-panel">
+<div class="lb-responsive-panel-intro">
+<span class="lb-responsive-label">ADAPTAÇÃO RESPONSIVA</span>
+<h3>O layout muda de acordo com o contexto de uso.</h3>
+<p>No desktop há mais espaço para composição. No mobile, a prioridade passa a ser leitura, navegação por toque e reorganização dos elementos.</p>
+</div>
+
+<div class="lb-responsive-item">
+<span class="lb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10 5h4M10 19h4"/></svg></span>
+<div><span class="lb-responsive-label">MOBILE</span><h3>Layout para dispositivos móveis</h3><p>Menus, botões, imagens e formulários são reorganizados para telas menores e navegação por toque, sem apenas reduzir o layout original.</p></div>
+</div>
+
+<div class="lb-responsive-item">
+<span class="lb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5M8 11l2 2 4-4"/></svg></span>
+<div><span class="lb-responsive-label">SEO</span><h3>Responsividade e SEO</h3><p>O Google utiliza principalmente a versão móvel do conteúdo para indexação. Uma estrutura responsiva ajuda a manter informações e links acessíveis em diferentes telas.</p></div>
+</div>
+</div>
 </div>
 </div></section>
 
