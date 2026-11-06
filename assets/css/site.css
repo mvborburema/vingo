@@ -332,3 +332,71 @@ body main h3{font-family:Manrope,Arial,sans-serif!important;font-size:clamp(20px
 body main h1,body main h2,body main h3{overflow-wrap:normal!important;word-break:normal!important}
 body main .service-card h2,body main .project-text h2,body main .blog-text h2,body main .modal-head h2{font-size:24px!important;line-height:1.25!important}
 @media(max-width:740px){body main h1{font-size:38px!important;line-height:1.1!important}body main h2{font-size:30px!important;line-height:1.14!important}body main h3{font-size:21px!important;line-height:1.25!important}body main .service-card h2,body main .project-text h2,body main .blog-text h2,body main .modal-head h2{font-size:22px!important}}
+
+
+/* VINGO GLOBAL TYPE + LINE CONTROL V2 */
+/* Strong final hierarchy for every internal page */
+html body main[class] section[class] h1,
+html body main[class] h1{
+  font-family:Manrope,Arial,sans-serif!important;
+  font-size:clamp(42px,4.1vw,56px)!important;
+  line-height:1.08!important;
+  letter-spacing:-.055em!important;
+}
+html body main[class] section[class] h2,
+html body main[class] h2{
+  font-family:Manrope,Arial,sans-serif!important;
+  font-size:clamp(30px,3vw,40px)!important;
+  line-height:1.12!important;
+  letter-spacing:-.045em!important;
+}
+html body main[class] section[class] h3,
+html body main[class] h3{
+  font-family:Manrope,Arial,sans-serif!important;
+  font-size:clamp(20px,1.7vw,24px)!important;
+  line-height:1.24!important;
+  letter-spacing:-.035em!important;
+}
+html body main[class] h1,
+html body main[class] h2,
+html body main[class] h3{
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+}
+/* Use available horizontal space before breaking titles/subtitles */
+html body main[class] .page-hero h1,
+html body main[class] .ab-hero h1,
+html body main[class] .lb-hero h1,
+html body main[class] .vb-blog-intro h1{
+  width:min(100%,1120px)!important;
+  max-width:1120px!important;
+}
+html body main[class] .page-hero p,
+html body main[class] .ab-hero-bottom p,
+html body main[class] .lb-hero p,
+html body main[class] .vb-blog-intro p{
+  width:min(100%,920px)!important;
+  max-width:920px!important;
+}
+html body main[class] .section-top h2,
+html body main[class] .ab-section-head h2,
+html body main[class] .lb-head h2,
+html body main[class] .section-intro h2{
+  width:min(100%,1020px)!important;
+  max-width:1020px!important;
+}
+html body main[class] .section-top p,
+html body main[class] .ab-section-head>p,
+html body main[class] .lb-head>p,
+html body main[class] .section-intro>p{
+  max-width:760px!important;
+}
+@media(max-width:740px){
+ html body main[class] section[class] h1,html body main[class] h1{font-size:38px!important;line-height:1.1!important}
+ html body main[class] section[class] h2,html body main[class] h2{font-size:30px!important;line-height:1.14!important}
+ html body main[class] section[class] h3,html body main[class] h3{font-size:21px!important;line-height:1.25!important}
+ html body main[class] .page-hero p,
+ html body main[class] .ab-hero-bottom p,
+ html body main[class] .lb-hero p,
+ html body main[class] .vb-blog-intro p{width:100%!important;max-width:100%!important}
+}
