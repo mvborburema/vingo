@@ -1273,3 +1273,12 @@ html body #diferenciais.home-diff-v38 .home-diff-cta-v38{margin-top:40px}
 @media(max-width:800px){html body #services.home-services-v38 .services-intro-v38{grid-template-columns:1fr;gap:20px}html body #services.home-services-v38 .home-services-grid-v38{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){html body #services.home-services-v38,html body #diferenciais.home-diff-v38{padding:72px 0}html body #services.home-services-v38 .services-intro-v38 h1{font-size:38px!important}html body #services.home-services-v38 .home-services-grid-v38,html body #diferenciais.home-diff-v38 .home-diff-grid-v38{grid-template-columns:1fr}html body #services.home-services-v38 .home-service-card-v38,html body #diferenciais.home-diff-v38 .home-diff-card-v38{min-height:0}html body .home-pill-v38{width:100%}}
 @media(prefers-reduced-motion:reduce){html body #services.home-services-v38 .home-service-card-v38,html body #diferenciais.home-diff-v38 .home-diff-card-v38{transition:none}}
+
+
+/* VINGO HOME TYPE WIDTH FINAL */
+.hero-display{font-size:clamp(46px,5vw,76px)!important;line-height:1.08!important;max-width:1120px!important}
+.hero-desc{max-width:920px!important;font-size:17px!important;line-height:1.65!important}
+.services .section-intro h1{font-size:clamp(40px,4.1vw,56px)!important;line-height:1.08!important;max-width:1080px!important}
+.services .section-intro{grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr)!important}
+@media(max-width:900px){.hero-desc{max-width:720px!important}.services .section-intro{grid-template-columns:1fr!important}}
+@media(max-width:650px){.hero-display{font-size:42px!important;line-height:1.08!important}.hero-desc{font-size:16px!important;line-height:1.6!important;max-width:100%!important}.services .section-intro h1{font-size:38px!important}}
