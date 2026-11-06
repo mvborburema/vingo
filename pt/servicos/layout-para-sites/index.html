@@ -34,6 +34,182 @@
 .lb-final{background:linear-gradient(120deg,#0a2b4f,#0c456d);color:#fff;padding:75px 0}.lb-final .shell{display:flex;justify-content:space-between;gap:45px;align-items:center}.lb-final h2{font:800 clamp(31px,3vw,46px)/1.08 Manrope;margin:8px 0 10px;max-width:760px}.lb-final p{color:#c0d3e5;max-width:760px;line-height:1.7}
 @media(max-width:980px){.lb-hero-grid,.lb-split,.lb-device{grid-template-columns:1fr}.lb-hero-visual{min-height:450px}.lb-card-grid{grid-template-columns:repeat(2,1fr)}.lb-feature-grid{grid-template-columns:repeat(2,1fr)}.lb-process{grid-template-columns:repeat(2,1fr)}.lb-projects{grid-template-columns:repeat(2,1fr)}.lb-strip{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.lb-hero{padding:72px 0 64px}.lb-hero-grid{gap:35px}.lb-hero h1{font-size:38px}.lb-hero-visual{min-height:340px}.lb-hero-img{width:90%;top:0}.lb-hero-img.second{width:58%;top:155px}.lb-float{display:none}.lb-section{padding:68px 0}.lb-card-grid,.lb-feature-grid,.lb-process,.lb-outsourcing,.lb-projects,.lb-compare{grid-template-columns:1fr}.lb-image-stack{min-height:390px}.lb-image-stack img:first-child{height:310px}.lb-image-stack img:last-child{height:190px}.lb-device-main img{height:280px}.lb-final .shell{display:block}.lb-final .lb-btn{margin-top:20px;width:100%}.lb-head{text-align:left}.lb-strip{grid-template-columns:1fr 1fr}.lb-strip div{font-size:12px;padding:18px 10px}}
+
+/* VINGO LAYOUT PARA SITES — REFINO PREMIUM V3 */
+.layout-b2b{--lb-blue:#438bdc;--lb-deep:#071a30;--lb-soft:#f4f7fb;--lb-line:#d9e4ef;--lb-text:#18314e;--lb-muted:#64778d}
+.layout-b2b .shell{max-width:1220px}
+
+/* Hero mais editorial e sofisticado */
+.lb-hero{
+  padding:118px 0 102px;
+  background:
+    radial-gradient(circle at 76% 34%,rgba(67,139,220,.20),transparent 26%),
+    radial-gradient(circle at 20% 110%,rgba(59,203,214,.10),transparent 34%),
+    linear-gradient(135deg,#061629 0%,#0a2647 55%,#0b3159 100%);
+}
+.lb-hero:before{
+  width:720px;height:720px;right:-240px;bottom:-420px;left:auto;
+  border-color:rgba(128,183,238,.14);
+  box-shadow:0 0 0 80px rgba(128,183,238,.025),0 0 0 160px rgba(128,183,238,.015);
+}
+.lb-hero-grid{grid-template-columns:minmax(0,1.08fr) minmax(430px,.92fr);gap:76px}
+.lb-hero h1{max-width:760px!important;margin:18px 0 26px!important}
+.lb-hero p{max-width:760px!important;line-height:1.72}
+.lb-hero p:first-of-type{font-size:18px;color:#d2dfed}
+.lb-hero p+p{font-size:15.5px;color:#9fb3c8;max-width:700px!important}
+.lb-hero-actions{margin-top:36px}
+.lb-btn{min-height:52px;padding:0 22px;transition:transform .22s ease,box-shadow .22s ease,background .22s ease}
+.lb-btn:hover{transform:translateY(-2px)}
+.lb-btn-primary{background:#8fbfff;color:#071a30;box-shadow:0 12px 30px rgba(67,139,220,.16)}
+.lb-btn-secondary{background:rgba(255,255,255,.045);border-color:rgba(177,205,233,.28)}
+.lb-hero-visual{min-height:560px}
+.lb-hero-img{
+  border-radius:16px;border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 30px 75px rgba(0,0,0,.33);
+}
+.lb-hero-img:first-of-type{width:88%;right:0;top:28px;transform:rotate(1.2deg)}
+.lb-hero-img.second{width:54%;left:2px;top:300px;transform:rotate(-3.5deg);border:6px solid rgba(7,26,48,.85)}
+.lb-float{border:1px solid rgba(20,61,97,.12);border-radius:999px;padding:10px 14px;font-size:11px;letter-spacing:.08em;box-shadow:0 14px 35px rgba(0,0,0,.18)}
+.lb-float.one{left:8px;top:125px}.lb-float.two{right:4px;bottom:38px}
+
+/* Faixa de atributos */
+.lb-strip{max-width:1220px;margin:-34px auto 0;position:relative;z-index:5;padding:0 28px;gap:12px;background:transparent;border:0}
+.lb-strip div{
+  border:1px solid var(--lb-line);border-radius:14px;background:#fff;padding:19px 18px;
+  box-shadow:0 15px 35px rgba(16,38,64,.07);text-align:left
+}
+.lb-strip span{color:var(--lb-blue);margin-bottom:6px}
+
+/* Ritmo e cabeçalhos */
+.lb-section{padding:108px 0}
+.lb-alt{background:#f6f8fb}
+.lb-head{max-width:1040px;margin:0 auto 50px}
+.lb-head h2{max-width:1000px!important;margin:11px auto 17px!important;color:#102b48}
+.lb-head p{max-width:780px!important;margin:0 auto!important}
+.lb-copy h2{color:#102b48}
+.lb-copy p{max-width:680px}
+.lb-eyebrow{color:#438bdc}
+
+/* Imagens com mais presença */
+.lb-image-stack{min-height:560px}
+.lb-image-stack img:first-child{width:88%;height:455px;border-radius:18px}
+.lb-image-stack img:last-child{width:50%;height:250px;border-radius:16px;border:7px solid #fff}
+.lb-split{gap:72px}
+
+/* Cards mais finos e menos "quadrados" */
+.lb-card-grid{gap:16px}
+.lb-card{
+  border:1px solid var(--lb-line);border-radius:16px;padding:28px 25px;
+  box-shadow:none;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease
+}
+.lb-card:hover{transform:translateY(-4px);border-color:#b9cfe5;box-shadow:0 18px 42px rgba(18,49,78,.07)}
+.lb-icon{width:44px;height:44px;border-radius:12px;background:#edf5fd;color:#438bdc}
+.lb-card h3{margin-top:2px}
+
+/* Comparativo mais editorial */
+.lb-compare{gap:18px}
+.lb-compare-card{border-radius:18px;padding:38px 36px}
+.lb-compare-card:first-child{background:#f9fbfd}
+.lb-compare-card.featured{
+  background:linear-gradient(145deg,#0a2441,#103b68);
+  box-shadow:0 24px 60px rgba(7,26,48,.16)
+}
+.lb-compare-card h3{font-size:25px!important}
+.lb-compare-label{color:#438bdc}
+
+/* Elementos modernos — 3 + 2 visualmente */
+.lb-feature-grid{grid-template-columns:repeat(6,1fr);gap:16px}
+.lb-feature{grid-column:span 2;border:1px solid var(--lb-line);border-top:3px solid #438bdc;border-radius:15px;padding:28px 24px;background:#fff;box-shadow:none}
+.lb-feature:nth-child(4),.lb-feature:nth-child(5){grid-column:span 3}
+.lb-feature h3{font-size:19px!important}
+
+/* Processo de criação visual */
+.lb-card-grid[style*="repeat(4,1fr)"]{gap:14px}
+.lb-card-grid[style*="repeat(4,1fr)"] .lb-card{position:relative;padding-top:34px}
+.lb-card-grid[style*="repeat(4,1fr)"] .lb-compare-label{
+  display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#0d2d50;color:#fff;margin-bottom:16px
+}
+
+/* Responsividade */
+.lb-device{gap:18px}
+.lb-device-main,.lb-device-side{border-radius:18px}
+.lb-device-main img{height:430px}
+.lb-device-side{padding:40px;background:linear-gradient(180deg,#fff,#f8fbfe)}
+.lb-device-side .lb-icon{margin-bottom:24px}
+
+/* Fluxo B2B — vira timeline sofisticada */
+.lb-dark{background:linear-gradient(135deg,#07182b,#0a2b4d)}
+.lb-process{grid-template-columns:1fr;gap:0;max-width:980px;margin:0 auto;border-left:1px solid rgba(132,180,226,.28);padding-left:32px}
+.lb-step{
+  min-height:0;background:transparent;border-radius:0;padding:0 0 34px 32px;position:relative;border-bottom:1px solid rgba(132,180,226,.14)
+}
+.lb-step:last-child{border-bottom:0;padding-bottom:0}
+.lb-step:before{content:"";position:absolute;left:-39px;top:4px;width:12px;height:12px;border-radius:50%;background:#438bdc;box-shadow:0 0 0 7px rgba(67,139,220,.12)}
+.lb-step .num{display:block;margin-bottom:10px;color:#82b9f2}
+.lb-step h3{font-size:22px!important;margin:0 0 8px!important}
+.lb-step p{max-width:760px;font-size:15px}
+
+/* Terceirização / B2B */
+.lb-outsourcing{gap:16px}
+.lb-out{border:1px solid #244a70;background:rgba(12,43,74,.75);border-radius:16px;padding:30px}
+.lb-out .lb-icon{background:rgba(139,191,255,.11);color:#8fbfff}
+
+/* Portfólio com mais impacto */
+.lb-projects{gap:16px}
+.lb-project{min-height:320px;border-radius:16px}
+.lb-project:nth-child(1),.lb-project:nth-child(4){grid-column:span 2}
+.lb-project figcaption{left:24px;bottom:22px}
+.lb-project strong{font-size:22px}
+.lb-project:after{background:linear-gradient(0deg,rgba(4,16,31,.86),rgba(4,16,31,.03) 72%)}
+
+/* FAQ já usa componente global */
+.layout-b2b .vingo-faq{max-width:980px}
+
+/* CTA final */
+.lb-final{padding:88px 0;background:linear-gradient(120deg,#0a2748,#0d4772)}
+.lb-final .shell{align-items:center}
+.lb-final h2{max-width:760px!important}
+.lb-final .lb-btn-primary{background:#fff;color:#0a2b52;box-shadow:none}
+
+/* Pequenos refinamentos */
+.lb-section .lb-head + .lb-card-grid,
+.lb-section .lb-head + .lb-compare,
+.lb-section .lb-head + .lb-feature-grid,
+.lb-section .lb-head + .lb-device,
+.lb-section .lb-head + .lb-outsourcing,
+.lb-section .lb-head + .lb-projects{margin-top:2px}
+
+@media(max-width:980px){
+  .lb-hero-grid{grid-template-columns:1fr}
+  .lb-hero-visual{min-height:480px}
+  .lb-strip{grid-template-columns:repeat(2,1fr);margin-top:-18px}
+  .lb-feature-grid{grid-template-columns:repeat(2,1fr)}
+  .lb-feature,.lb-feature:nth-child(4),.lb-feature:nth-child(5){grid-column:auto}
+  .lb-project:nth-child(1),.lb-project:nth-child(4){grid-column:auto}
+  .lb-projects{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .lb-hero{padding:78px 0 66px}
+  .lb-hero-grid{gap:34px}
+  .lb-hero-visual{min-height:360px}
+  .lb-hero-img:first-of-type{width:92%}
+  .lb-hero-img.second{top:180px;width:55%}
+  .lb-strip{grid-template-columns:1fr;margin-top:-8px;padding:0 20px}
+  .lb-section{padding:76px 0}
+  .lb-head{text-align:left;margin-bottom:36px}
+  .lb-image-stack{min-height:410px}
+  .lb-image-stack img:first-child{height:320px;width:92%}
+  .lb-image-stack img:last-child{height:180px;width:58%}
+  .lb-card-grid,.lb-feature-grid,.lb-outsourcing,.lb-projects,.lb-compare{grid-template-columns:1fr!important}
+  .lb-device-main img{height:290px}
+  .lb-device-side{padding:28px}
+  .lb-process{padding-left:24px}
+  .lb-step{padding-left:24px}
+  .lb-step:before{left:-31px}
+  .lb-project{min-height:250px}
+  .lb-final{padding:70px 0}
+}
+
 </style></head><body><header class="site-header"><div class="header-inner"><a class="brand" href="../../../pt/index.html" aria-label="VINGO Creative Studio"><img src="../../../assets/img/logo-vingo.png" alt="VINGO Creative Studio"></a><button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Menu">☰</button><nav id="main-nav" aria-label="Main navigation"><a href="../../../pt/index.html" >Home</a><a href="../../../pt/quem-somos/" >Quem Somos</a><a href="../../../pt/servicos/" aria-current=page>Serviços</a><a href="../../../pt/portfolio/" >Portfólio</a><a href="../../../pt/blog/" >Blog</a><a href="../../../pt/contato/" >Contato</a></nav><div class="header-end"><div class="language"><a href="../../../pt/index.html" lang="pt" aria-label="Português">🇧🇷</a><a href="../../../en/index.html" lang="en" aria-label="English">🇺🇸</a></div><a class="pill pill-light header-cta" href="../../../pt/contato/">Solicitar orçamento<span class="circle">↗</span></a></div></div></header><main id="main-content" class="layout-b2b">
 <section class="lb-hero"><div class="shell lb-hero-grid"><div><span class="lb-kicker">VINGO / PARCERIA B2B PARA AGÊNCIAS</span><h1>Layout para Site Profissional para Agências</h1><p>Sua agência precisa de um parceiro especializado na criação de layouts para sites? A VINGO Creative Studio desenvolve interfaces personalizadas, modernas e responsivas para projetos de agências de marketing digital, publicidade, SEO e desenvolvimento. Atuamos nos bastidores da operação, com foco na qualidade visual, na organização das informações e na experiência de navegação.</p><p>Transformamos briefings e referências em layouts consistentes para desktop e mobile. Quando contratado, também entregamos o desenvolvimento front-end em HTML, CSS e JavaScript, para que a equipe da agência possa seguir com a implementação do projeto. Não comercializamos a criação completa de sites.</p><div class="lb-hero-actions"><a class="lb-btn lb-btn-primary" href="../../contato/">Solicitar parceria B2B <span>↗</span></a><a class="lb-btn lb-btn-secondary" href="../../portfolio/">Conhecer portfólio <span>→</span></a></div></div><div class="lb-hero-visual" aria-label="Exemplos visuais de layouts desenvolvidos pela VINGO"><img class="lb-hero-img" src="../../../assets/img/sado-luiz.jpg" alt="Exemplo de layout para site apresentado em desktop"><img class="lb-hero-img second" src="../../../assets/img/donna-santa.jpg" alt="Exemplo de interface digital desenvolvida pela VINGO"><span class="lb-float one">DESKTOP + MOBILE</span><span class="lb-float two">UI/UX + FRONT-END</span></div></div></section>
 <div class="lb-strip"><div><span>01</span>Layout personalizado</div><div><span>02</span>Design responsivo</div><div><span>03</span>UI/UX para agências</div><div><span>04</span>HTML · CSS · JS</div></div>
@@ -73,15 +249,15 @@
 
 <section class="lb-section lb-alt"><div class="shell"><div class="lb-head"><span class="lb-eyebrow">PORTFÓLIO</span><h2>Conheça Layouts e Interfaces para Projetos Digitais</h2><p>Nosso portfólio apresenta exemplos de layouts e interfaces produzidos com atenção ao design, à organização de informações e à responsividade.</p></div><div class="lb-projects"><figure class="lb-project"><img src="../../../assets/img/sado-luiz.jpg" alt="Layout do projeto Sado Luiz"><figcaption><strong>Sado Luiz</strong><span>Interface digital</span></figcaption></figure><figure class="lb-project"><img src="../../../assets/img/baby-store.jpg" alt="Layout do projeto Baby Store"><figcaption><strong>Baby Store</strong><span>Interface digital</span></figcaption></figure><figure class="lb-project"><img src="../../../assets/img/terere-shop.jpg" alt="Layout do projeto Tereré Shop"><figcaption><strong>Tereré Shop</strong><span>Interface digital</span></figcaption></figure><figure class="lb-project"><img src="../../../assets/img/donna-santa.jpg" alt="Layout do projeto Donna Santa"><figcaption><strong>Donna Santa</strong><span>Interface digital</span></figcaption></figure><figure class="lb-project"><img src="../../../assets/img/le-petit.jpg" alt="Layout do projeto Le Petit"><figcaption><strong>Le Petit</strong><span>Interface digital</span></figcaption></figure><figure class="lb-project"><img src="../../../assets/img/made-in-mato.jpg" alt="Layout do projeto Made in Mato"><figcaption><strong>Made in Mato</strong><span>Interface digital</span></figcaption></figure></div><div style="text-align:center;margin-top:32px"><a class="lb-btn lb-btn-primary" href="../../portfolio/">Conhecer portfólio ↗</a></div></div></section>
 
-<section class="lb-section"><div class="shell"><div class="lb-head"><span class="lb-eyebrow">FAQ PARA AGÊNCIAS</span><h2>Dúvidas Frequentes de Agências sobre Layout e Front-end</h2></div><div class="lb-faq">
-<details open><summary>A VINGO atende agências de marketing digital e SEO? <span>+</span></summary><p>Sim. O foco comercial da VINGO são agências de marketing, SEO, publicidade e desenvolvimento que precisam de apoio especializado na criação de layouts e no front-end dos projetos.</p></details>
-<details><summary>A agência continua responsável pelo cliente final? <span>+</span></summary><p>Sim. A proposta de atuação B2B é que a agência conduza o relacionamento e a estratégia com o cliente final, enquanto a VINGO execute as entregas contratadas. Condições de comunicação direta, confidencialidade e eventual atuação white-label podem ser definidas em acordo.</p></details>
-<details><summary>Vocês atendem demandas pontuais e recorrentes? <span>+</span></summary><p>A parceria pode ser organizada por projeto ou por um fluxo recorrente de demandas, conforme a disponibilidade, o volume de trabalho e os termos acordados.</p></details>
-<details><summary>A VINGO também entrega HTML, CSS e JavaScript? <span>+</span></summary><p>Sim. Além do design de interfaces, podemos desenvolver o front-end em HTML, CSS e JavaScript quando essa entrega fizer parte do escopo contratado.</p></details>
-<details><summary>Os layouts podem seguir o planejamento de SEO da agência? <span>+</span></summary><p>Sim. Trabalhamos a estrutura visual com base na hierarquia de conteúdo e nas orientações recebidas. Na etapa de front-end, aplicamos boas práticas técnicas de HTML semântico e responsividade, sem prometer posições específicas no Google.</p></details>
-<details><summary>Como funciona o orçamento de uma parceria B2B? <span>+</span></summary><p>O orçamento considera quantidade de páginas e versões, complexidade visual, necessidades de front-end, prazos e revisões. Para demandas recorrentes, as condições podem ser avaliadas conforme o volume e a previsibilidade dos projetos.</p></details>
-<details><summary>Vocês trabalham no modelo white-label? <span>+</span></summary><p>Podemos avaliar um modelo white-label para agências interessadas, desde que as condições de uso de marca, confidencialidade, portfólio e comunicação sejam acordadas previamente.</p></details>
-<details><summary>A VINGO publica os sites dos clientes da agência? <span>+</span></summary><p>Não oferecemos criação completa ou publicação de sites como parte padrão do serviço. Atuamos no layout e, quando contratado, no desenvolvimento front-end; a implantação final é conduzida pela agência ou pela equipe responsável.</p></details>
+<section class="lb-section"><div class="shell"><div class="lb-head"><span class="lb-eyebrow">FAQ PARA AGÊNCIAS</span><h2>Dúvidas Frequentes de Agências sobre Layout e Front-end</h2></div><div class="vingo-faq">
+<details open><summary><span>A VINGO atende agências de marketing digital e SEO?</span><span class="vingo-faq-plus">+</span></summary><p>Sim. O foco comercial da VINGO são agências de marketing, SEO, publicidade e desenvolvimento que precisam de apoio especializado na criação de layouts e no front-end dos projetos.</p></details>
+<details><summary><span>A agência continua responsável pelo cliente final?</span><span class="vingo-faq-plus">+</span></summary><p>Sim. A proposta de atuação B2B é que a agência conduza o relacionamento e a estratégia com o cliente final, enquanto a VINGO execute as entregas contratadas. Condições de comunicação direta, confidencialidade e eventual atuação white-label podem ser definidas em acordo.</p></details>
+<details><summary><span>Vocês atendem demandas pontuais e recorrentes?</span><span class="vingo-faq-plus">+</span></summary><p>A parceria pode ser organizada por projeto ou por um fluxo recorrente de demandas, conforme a disponibilidade, o volume de trabalho e os termos acordados.</p></details>
+<details><summary><span>A VINGO também entrega HTML, CSS e JavaScript?</span><span class="vingo-faq-plus">+</span></summary><p>Sim. Além do design de interfaces, podemos desenvolver o front-end em HTML, CSS e JavaScript quando essa entrega fizer parte do escopo contratado.</p></details>
+<details><summary><span>Os layouts podem seguir o planejamento de SEO da agência?</span><span class="vingo-faq-plus">+</span></summary><p>Sim. Trabalhamos a estrutura visual com base na hierarquia de conteúdo e nas orientações recebidas. Na etapa de front-end, aplicamos boas práticas técnicas de HTML semântico e responsividade, sem prometer posições específicas no Google.</p></details>
+<details><summary><span>Como funciona o orçamento de uma parceria B2B?</span><span class="vingo-faq-plus">+</span></summary><p>O orçamento considera quantidade de páginas e versões, complexidade visual, necessidades de front-end, prazos e revisões. Para demandas recorrentes, as condições podem ser avaliadas conforme o volume e a previsibilidade dos projetos.</p></details>
+<details><summary><span>Vocês trabalham no modelo white-label?</span><span class="vingo-faq-plus">+</span></summary><p>Podemos avaliar um modelo white-label para agências interessadas, desde que as condições de uso de marca, confidencialidade, portfólio e comunicação sejam acordadas previamente.</p></details>
+<details><summary><span>A VINGO publica os sites dos clientes da agência?</span><span class="vingo-faq-plus">+</span></summary><p>Não oferecemos criação completa ou publicação de sites como parte padrão do serviço. Atuamos no layout e, quando contratado, no desenvolvimento front-end; a implantação final é conduzida pela agência ou pela equipe responsável.</p></details>
 </div></div></section>
 
 <section class="lb-final"><div class="shell"><div><span class="lb-eyebrow">PARCERIA PARA AGÊNCIAS</span><h2>Sua Agência Precisa de um Parceiro de Layout e Front-end?</h2><p>Se sua equipe precisa de apoio para criar layouts profissionais, modernizar interfaces ou transformar designs em HTML, CSS e JavaScript, a VINGO Creative Studio pode atuar como parceira de execução. Envie o briefing, o escopo esperado e o prazo para avaliarmos a demanda.</p></div><a class="lb-btn lb-btn-primary" href="../../contato/">Conversar sobre parceria para agências ↗</a></div></section>
