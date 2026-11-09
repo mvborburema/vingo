@@ -1394,3 +1394,8 @@ html body main#main h1 strong.accent{
   color:#438bdc!important;
   font-style:normal!important;
 }
+
+
+/* Preserve original resolution of VINGO portfolio screenshots on homepage */
+#portfolio .v23-portfolio-media{display:flex;align-items:center;justify-content:center;background:#f0f4f9}
+#portfolio .v23-portfolio-media img{display:block;width:100%;height:auto;max-width:370px;max-height:278px;object-fit:contain;image-rendering:auto}
