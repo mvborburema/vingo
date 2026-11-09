@@ -1,0 +1,23 @@
+name: Import verified VINGO portfolio images
+on:
+  push:
+    paths:
+      - '.github/workflows/vingo-import-portfolio.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-portfolio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download all 36 verified portfolio project images
+        run: python3 scripts/import_vingo_portfolio.py
+      - name: Commit only if complete
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/img/portfolio/ pt/portfolio/index.html en/portfolio/index.html assets/css/site.css
+          git diff --cached --quiet || (git commit -m "Replace test portfolio with 36 real project previews" && git push)
