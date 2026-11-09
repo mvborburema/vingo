@@ -488,3 +488,8 @@ html body main h1 strong.accent{
 .vp-real-copy p{font:400 15px/1.7 'DM Sans',Arial,sans-serif;color:#5f748a;margin:0}
 @media(max-width:850px){.vp-real-grid{grid-template-columns:repeat(2,minmax(0,370px))}}
 @media(max-width:560px){.vp-real-grid{grid-template-columns:minmax(0,370px)}}
+
+
+/* Preserve original resolution of portfolio screenshots on About page */
+.about-premium .ab-gallery-image{display:flex;align-items:center;justify-content:center;background:#142b47}
+.about-premium .ab-gallery-image img{width:100%;max-width:370px;max-height:278px;height:auto;object-fit:contain}
