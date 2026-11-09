@@ -8,7 +8,7 @@
 ;
 
 (()=>{const modal=document.getElementById('v20Modal');const cards=document.querySelectorAll('#portfolio article.v20-open');const title=document.getElementById('v20Title');const close=modal.querySelector('.v20-close');let previous=null;
-const open=(card)=>{previous=document.activeElement;title.textContent=card.dataset.project||'Apresentação do projeto';modal.hidden=false;modal.setAttribute('aria-hidden','false');document.body.classList.add('v20-locked');modal.querySelector('.v20-scroller').scrollTop=0;close.focus()};
+const open=(card)=>{previous=document.activeElement;title.textContent=card.dataset.project||'Apresentação do projeto';const preview=document.getElementById('v20Image');if(preview&&card.dataset.image){preview.src=card.dataset.image;preview.alt=card.dataset.project||'Projeto VINGO';preview.style.maxWidth='370px';preview.style.width='100%';preview.style.height='auto';}modal.hidden=false;modal.setAttribute('aria-hidden','false');document.body.classList.add('v20-locked');modal.querySelector('.v20-scroller').scrollTop=0;close.focus()};
 const dismiss=()=>{modal.hidden=true;modal.setAttribute('aria-hidden','true');document.body.classList.remove('v20-locked');if(previous&&previous.focus)previous.focus()};
 cards.forEach(card=>{card.addEventListener('click',event=>{if(event.target.closest('a'))event.preventDefault();open(card)});card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(card)}})});
 modal.querySelectorAll('[data-close]').forEach(el=>el.addEventListener('click',dismiss));document.addEventListener('keydown',e=>{if(!modal.hidden&&e.key==='Escape')dismiss();if(!modal.hidden&&e.key==='Tab'){e.preventDefault();close.focus()}});
