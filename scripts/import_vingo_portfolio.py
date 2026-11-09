@@ -50,7 +50,7 @@ SOURCES=[
 ]
 def get(url):
  req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/123 Safari/537.36","Accept":"text/html,image/avif,image/webp,image/*,*/*","Referer":"https://www.valedaweb.com.br/"})
- with urllib.request.urlopen(req,timeout=16) as response:return response.read()
+ with urllib.request.urlopen(req,timeout=7) as response:return response.read()
 found=[]
 for page in SOURCES:
  try:
@@ -78,11 +78,8 @@ print("MATCHED PAGE URLS",sum(bool(candidates.get(s)) for s in SLUGS),"of",len(S
 # Preserve original format: exact image from the website, no upscaling/recompression.
 def download(slug):
  urls=list(dict.fromkeys(candidates.get(slug,[])))
- for page,_ in found:
-  base=urllib.parse.urljoin(page,".")
-  names=[f"criacao-de-site-{slug}.webp",f"{slug}.webp",f"{slug}.png",f"criacao-de-site-{slug}.png"]
-  for folder in ("","img/","images/","assets/img/","assets/images/"):
-   urls.extend(urllib.parse.urljoin(base,folder+name) for name in names)
+ # Only try actual URLs found in the source pages; never brute-force paths.
+ if not urls:return slug,None,None,None
  for url in dict.fromkeys(urls):
   try:
    data=get(url)
