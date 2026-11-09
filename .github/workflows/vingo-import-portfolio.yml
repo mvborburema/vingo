@@ -5,11 +5,17 @@ on:
       - '.github/workflows/vingo-import-portfolio.yml'
   workflow_dispatch:
 permissions:
+  actions: write
   contents: write
 jobs:
   import-portfolio:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
+      - name: Cancel the earlier excessive import check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run cancel 42642950097 || true
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
