@@ -477,3 +477,14 @@ html body main h1 strong.accent{
  html body .vingo-faq summary{font-size:17px!important;padding:20px 0!important}
  html body .vingo-faq details p{font-size:15px!important;padding-right:28px!important}
 }
+
+/* VINGO verified real portfolio 36 */
+.vp-real-grid{display:grid;grid-template-columns:repeat(3,minmax(0,370px));gap:23px 18px;align-items:start;justify-content:center}
+.vp-real-card{min-width:0;background:#fff;border:1px solid #dbe5f0;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(12,34,58,.055)}
+.vp-real-picture{display:block;max-width:370px;width:100%;margin:0 auto;background:#eef3f9;overflow:hidden}
+.vp-real-picture img{display:block;width:100%;max-width:370px;height:auto;object-fit:contain}
+.vp-real-copy{padding:19px 19px 24px}
+.vp-real-copy h3{font:800 20px/1.3 Manrope,Arial,sans-serif;letter-spacing:-.035em;color:#102d4d;margin:0 0 9px}
+.vp-real-copy p{font:400 15px/1.7 'DM Sans',Arial,sans-serif;color:#5f748a;margin:0}
+@media(max-width:850px){.vp-real-grid{grid-template-columns:repeat(2,minmax(0,370px))}}
+@media(max-width:560px){.vp-real-grid{grid-template-columns:minmax(0,370px)}}
